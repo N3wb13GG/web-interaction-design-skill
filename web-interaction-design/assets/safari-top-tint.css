@@ -1,0 +1,19 @@
+.safari-top-tint {
+  display: none;
+}
+
+@supports (-webkit-touch-callout: none) and (-webkit-mask-image: linear-gradient(transparent, transparent)) {
+  .safari-top-tint {
+    display: block;
+    position: fixed;
+    top: 4px;
+    left: 50%;
+    width: 89%;
+    height: 11px;
+    transform: translateX(-50%);
+    z-index: 60;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(transparent, transparent);
+    mask-image: linear-gradient(transparent, transparent);
+  }
+}
